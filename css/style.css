@@ -1,0 +1,483 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin-right: 2%;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+} 
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #F6D4F5;
+    width: 100%;
+}
+
+
+header .container {
+    width: 75%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+header img {
+    width: 100%;
+    max-width: 25%;
+}
+
+
+.topbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "courgette";
+    background-color:black;
+    color:#F6D4F5;
+    height: 30px;
+}
+
+#cart {
+    display: flex;
+    align-items: center;
+    float: right;
+    color: #39023F; 
+    margin-top: 2%;
+}
+
+#cart p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10px;
+    font-family: "courgette";
+    color: #EBACF3;
+}
+
+#cart span {
+    font-weight: 600;
+    color: #39023F;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "courgette";
+    color: #39023F;
+}
+
+nav a:hover {
+    background-color: rgb(53,50,50);
+    color: white;
+    transition : 2s ease ;
+}
+
+
+/* main */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    padding-bottom: 3%;
+    width: 75%;
+    max-width:1500px;
+    margin: auto;
+}
+
+
+
+#slider {
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin: 3% auto 3% auto;
+    text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#slider img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    padding: 2%;
+}
+
+#slider h2 {
+    position: absolute;
+    left: 2%;
+    top:3%;
+    border: 1px #F6D4F5 solid;
+    background-color: #F6D4F5;
+    opacity: 0.8;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    color: #39023F;
+    width: 40%;
+    font-size: 1.4em;
+
+}
+
+#slider span {
+    color:#EBACF3;
+    text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#select { 
+    height: 200px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+    margin: 0 auto 3% 0;
+}
+
+#select article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 6% auto 2% auto;
+}
+
+
+#select h1{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    font-family: Impact, Haettenschweiler;
+    font-weight: 200;
+    text-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.escarpin img {
+    width: 100%;
+    max-width: 55%;
+}
+
+#select:hover img{
+    filter: opacity(0.5);
+}
+#select img:hover {
+    filter: opacity(1);
+}
+
+#select h3 {
+    font-family: "courgette";
+    font-weight: 200;
+}
+
+
+#news {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    background-color: #F2F2F2;
+
+}
+
+#news article {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3% 3% 4% 3%;
+    margin-right: 0.9%;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+#news img {
+    width: 100%;
+    max-width: 100%;
+    background-color: white;
+}
+
+#news h2::before {
+    position: absolute;
+    content: "";
+    left: 5%;
+    background: url(/img/logo4.png);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+#new h2 {
+    position: relative;
+    border: 1px #E835C5 solid;
+    background-color:#E835C5;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#best h2::before {
+    position: absolute;
+    content: "";
+    left: 5%;
+    background: url(/img/logo4.png);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+#best h2 {
+    position: relative;
+    border: 1px #91BB4B solid;
+    background-color:#91BB4B;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#crush h2::before {
+    position: absolute;
+    content: "";
+    left: 5%;
+    background: url(/img/logo4.png);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+#crush h2 {
+    position: relative;
+    border: 1px #0397B1 solid;
+    background-color:#0397B1;
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#news h3 {
+    color: black;
+    font-family: "courgette";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+small {
+    color: black;
+    font-family: "courgette";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin: auto;
+    width: 75%;
+    max-width:1500px;
+    background-color: #F6D4F5;
+}
+
+#info {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: #E3ADE1;
+}
+
+#info article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #39023F;
+}
+
+#info article:hover {
+    color: white;
+    transition: 2s ease-in-out;
+}
+
+#info small:hover {
+    color: white;
+    transition: 1s ease-in-out;
+    cursor: pointer;
+}
+
+#bottombar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+}
+
+#bottombar article {
+    background-color: #F6D4F5;
+    width: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;  
+}
+
+#bottombar h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    color: #39023F;
+    height: 60px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+ul li {
+    font-family: "courgette";
+    font-size: large;
+    text-decoration: none;
+    font-size: 150%;
+    color: #E3ADE1 ;
+}
+
+
+@media screen and (max-width: 640px) {
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 220px;
+    }
+
+    .container img {
+        display: flex;
+        margin: auto;
+    }    
+
+    #cart {
+        padding-bottom: 12%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #slider {
+        display: flex;
+        flex-direction: column
+    }
+
+    #slider h2 {
+        position: relative;
+        width: 100%;
+    }
+
+    #select {
+        display: flex;
+        flex-direction: column;
+        height: 780px;
+    }
+
+    #select h1 {
+        position: relative;
+        text-align: center; 
+        padding-bottom: 15%;
+    }
+
+    #news {
+        display: flex;
+        flex-direction: column;
+    }
+
+#news h2::before {
+    position: absolute;
+    content: "";
+    left: 22%;
+    background: url(/img/logo4.png);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    }
+    
+    
+#best h2::before {
+    position: absolute;
+    content: "";
+    left: 19%;
+    background: url(/img/logo4.png);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+#crush h2::before {
+    position: absolute;
+    content: "";
+    left: 15%;
+    background: url(/img/logo4.png);
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+}
+
+    footer {
+        margin: auto;
+        height: auto
+    }
+
+    #info {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    #info article {
+        margin-bottom: 3%;
+    }
+
+    #bottombar {
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
